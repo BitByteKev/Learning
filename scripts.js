@@ -35,42 +35,6 @@ button.addEventListener("click", () => {
   arr.push(count);
 });
 
-// // Anonymous Functions
-// let value = "1000";
-// (function () {
-//   let value = "500";
-//   console.log(value);
-// })();
-
-// let result = (function () {
-//   let value = "100";
-//   return value;
-// })();
-// console.log(result);
-// console.log(value);
-
-// (function (value) {
-//   console.log(`I have ${value} dollars`);
-// })("5000");
-
-// // Car Object
-// const newCar = {
-//   make: "Honda",
-//   model: "Insight",
-//   year: "2021",
-//   color: "Grey",
-// };
-
-// // Ask user what model car they have
-// let carModel = input("What is your car Model?");
-
-// // If model is Insight, say Good MPG, else may want one
-// if (newCar.model === carModel) {
-//   console.log("Great MPG");
-// } else {
-//   console.log("May want an Insight");
-// }
-
 class NewCar {
   constructor(model, make, year, color) {
     this.model = model;
@@ -101,62 +65,43 @@ class Person {
   }
 }
 
-class invoice {
-  constructor(invoiceNumber, invoiceDate, invoiceAmount) {
-    this.invoiceNumber = invoiceNumber;
-    this.invoiceDate = invoiceDate;
-    this.invoiceAmount = invoiceAmount;
-  }
+for (let prop in newCar) {
+  console.log(newCar[prop]);
 }
 
-class invoiceItem extends invoice {
-  constructor(invoiceNumber, invoiceDate, invoiceAmount, description) {
-    super(invoiceNumber, invoiceDate, invoiceAmount);
-    this.description = description;
-  }
+// Go to services and create a div saying Magic of DOM
+const id = document.getElementById("services");
+
+const element = document.createElement("div");
+element.textContent = "Magic of DOM";
+id.append(element);
+
+// Check age for bar
+let age = prompt("What is your age?");
+
+Number(age);
+console.log(age);
+if (age >= 21) {
+  console.log("You are allowed to enter & drink");
+} else if (age >= 19) {
+  console.log("You are allowed to enter but not drink");
+} else {
+  console.log("You are not allowed in.");
 }
 
-// For loop
+// Compare age to number 100
+let val = prompt("What Number?");
+val = Number(val);
+let num = 100;
+if (val > num) {
+  console.log(val + " was greater than " + num);
+} else if (val < num) {
+  console.log(val + " is less than " + num);
+} else if (val === num) {
+  console.log(val + " is equal to " + num);
+}
 
-// for (let prop in newCar) {
-//   console.log(newCar[prop]);
-// }
+// For Loop
+const myWork = [];
 
-// // Go to services and create a div saying Magic of DOM
-// const id = document.getElementById("services")
-
-// const element = document.createElement('div');
-// element.textContent = "Magic of DOM";
-// id.append(element);
-
-// // Check age for bar
-// let age = prompt("What is your age?")
-
-// Number(age);
-// console.log(age);
-// if (age >= 21) {
-//     console.log("You are allowed to enter & drink");
-// } else if (age >= 19) {
-//     console.log("You are allowed to enter but not drink");
-// } else {
-//     console.log("You are not allowed in.");
-// }
-
-// // Compare age to number 100
-// let val = prompt("What Number?")
-// val = Number(val)
-// let num = 100;
-// if (val > num) {
-//     console.log(val + " was greater than " + num);
-// } else if (val < num) {
-//     console.log(val + " is less than " + num);
-// } else if (val===num) {
-//     console.log(val + " is equal to " + num);
-// }
-
-// // For Loop
-// const myWork = [];
-
-// for(let i = 0; i < 10; i++) {
-
-// }
+for (let i = 0; i < 10; i++) {}

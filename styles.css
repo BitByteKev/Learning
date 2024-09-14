@@ -1,6 +1,7 @@
 body {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #393e46;
 }
 
 .container {
@@ -12,10 +13,6 @@ body {
 .dice {
   text-align: center;
   display: inline-block;
-}
-
-body {
-  background-color: #393e46;
 }
 
 h1 {
